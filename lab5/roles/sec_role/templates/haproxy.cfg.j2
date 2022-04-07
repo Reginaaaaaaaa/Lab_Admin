@@ -19,5 +19,5 @@ backend static
     mode            http
     balance         roundrobin
     {% for item in groups['webservers'] %}
-    server {{ hostvars[item]['inventory_hostname'] }} {{ hostvars[item]['ansible_host'] }}:8080 check inter 1000 
+    server {{ hostvars[item]['inventory_hostname'] }} {{ hostvars[item]['ansible_host'] }}:{{nginx_listen_port}} check inter 1000 
     {% endfor %}
