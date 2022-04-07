@@ -1,0 +1,9 @@
+- name: haproxy
+  hosts: webservers
+  roles:
+    - web_nginx
+
+- name: Nginx
+  hosts: haproxy
+  roles:
+    - sec_role
