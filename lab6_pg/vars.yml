@@ -1,0 +1,4 @@
+---
+db_user: vagrant
+db_password: vagrant
+db_name: app1

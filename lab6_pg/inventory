@@ -1,0 +1,4 @@
+[pgsq1]
+pgsql1 ansible_host=192.168.11.111
+[pgsq2]
+pgsql2 ansible_host=192.168.11.112

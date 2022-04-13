@@ -1,0 +1,6 @@
+---
+keepalived_ip_nonlocal_bind: 1
+nginx_listen_port: 8080
+db_location: /var/lib/pgsql/data/
+main_ip: 192.168.11.111
+main_user: vagrant
