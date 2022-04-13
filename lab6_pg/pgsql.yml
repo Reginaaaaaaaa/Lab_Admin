@@ -4,15 +4,11 @@
 
   vars_files:
     - vars.yml
-
-  # pre_tasks:
-  #   - name: Install pip
-  #     command: python -m pip install --upgrade pip
     
     - name: Install pip3
       command: yum install python3-pip
 
-    - name: INSTALL FUCKING psycopg2-binary
+    - name: install psycopg2-binary
       command: pip install psycopg2-binary
       become: yes
   become_user: vagrant
